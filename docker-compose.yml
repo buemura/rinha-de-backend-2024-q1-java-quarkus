@@ -11,11 +11,11 @@ services:
       - db
     networks:
       - rinhabackend
-#    deploy:
-#      resources:
-#        limits:
-#          cpus: "0.3"
-#          memory: "85MB"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.3"
+          memory: "100MB"
 #
   api02:
     <<: *api
@@ -32,11 +32,11 @@ services:
       - "9999:9999"
     networks:
       - rinhabackend
-#    deploy:
-#      resources:
-#        limits:
-#          cpus: "0.2"
-#          memory: "30MB"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "30MB"
 
   db:
     image: postgres:latest
@@ -52,8 +52,8 @@ services:
     command: postgres -c checkpoint_timeout=600 -c max_wal_size=4096
     networks:
       - rinhabackend
-#    deploy:
-#      resources:
-#        limits:
-#          cpus: "0.7"
-#          memory: "350MB"
+    deploy:
+      resources:
+        limits:
+          cpus: "0.7"
+          memory: "320MB"

@@ -11,7 +11,6 @@ import com.buemura.exceptions.NotEnoughLimitException;
 import com.buemura.repositories.CustomerRepository;
 import com.buemura.repositories.TransactionRepository;
 import jakarta.persistence.LockModeType;
-import jakarta.transaction.Transactional;
 
 import java.util.Date;
 

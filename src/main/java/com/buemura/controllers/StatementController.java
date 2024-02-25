@@ -9,8 +9,6 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import com.buemura.dtos.StatementDto;
 import com.buemura.services.StatementService;
-import jakarta.ws.rs.WebApplicationException;
-import jakarta.ws.rs.core.Response;
 import org.jboss.resteasy.reactive.RestResponse;
 
 @Path("/clientes/{id}/extrato")
